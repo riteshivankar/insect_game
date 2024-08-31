@@ -17,3 +17,12 @@ img{
  
 
 }
+button{
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  transition: all 0.2s;
+}
+button:active{
+  transform: scale(1.2);
+}
