@@ -24,21 +24,20 @@ const App = () => {
         duration:0.6,
         delay:1
       },
-      [xVal,yVal,rot]
+      {scope:'main',dependencies:[xVal,yVal,rot]}
     );
   });
   return (
     <main>
       <img
         onClick={() => {
-          setxVal(ranX)
-          setyVal(ranY)
-          setrot(rota)
-          console.log(ranX,ranY,rota)
+          setxVal(ranX);
+          setyVal(ranY);
+          setrot(rota);
+          console.log(ranX, ranY, rota);
         }}
         ref={imageRef}
-        
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAoj5_vvXJtyriO6vTlIXJw4RTiSEW0FcEfQ&s"
+        src="https://e7.pngegg.com/pngimages/293/497/png-clipart-beetle-silhouette-beetle-animals-silhouette-thumbnail.png"
         alt=""
       />
     </main>
